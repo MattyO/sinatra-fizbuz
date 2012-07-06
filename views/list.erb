@@ -1,0 +1,27 @@
+<div class="row"> 
+	<div class="span12">
+		<h2 class="offset1"> between numbers <%= list.first[:number] %> and <%= list.last[:number] %> </h2>
+	</div>
+</div>
+<div class="row "> 
+	<div class="span6 offset1">
+	<table class="table-striped table-bordered span6"> 
+		<thead> 
+			<th> Number </th>
+			<th> Type </th>
+		</thead> 
+		<tbody>
+		<% list.each do |item| %>
+		<tr>
+			<td>
+				<%= item[:number] %>
+			</td>
+			<td>
+				<%= item[:type] %>
+			</td>
+		</tr>
+		<% end %>
+		</tbody>
+		</table>
+	</div>
+</div>
