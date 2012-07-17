@@ -5,18 +5,26 @@
 </div>
 <div class="row "> 
 	<div class="span6 offset1">
-	<table class="table-striped table-bordered span6"> 
+	<table class="table-bordered span6 lemontable"> 
 		<thead> 
 			<th> Number </th>
 			<th> Type </th>
 		</thead> 
 		<tbody>
 		<% list.each do |item| %>
-		<tr>
-			<td>
+		<tr class="<%= if item[:number] %  FIZ == 0 && item[:number] %  BUZ == 0
+				'fizbuz'
+			elsif item[:number] %  FIZ == 0
+				'fiz'
+			elsif item[:number] %  BUZ == 0
+				'buz'
+			else
+				'justanumber'
+			end %> entry">
+			<td class="span2">
 				<%= item[:number] %>
 			</td>
-			<td>
+			<td class="span4">
 				<%= item[:type] %>
 			</td>
 		</tr>

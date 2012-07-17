@@ -42,7 +42,7 @@ get %r{^/list/(\d+)-(\d+)$} do
   endD = params[:captures][1].to_i
   list = genList(startD, endD)
 
-  erb :list, :locals => {list:list}
+  erb :list, :locals => {list:list,FIZ: FIZ, BUZ: BUZ}
 end
 
 get %r{^/list/(\d+)$} do |listSize|
