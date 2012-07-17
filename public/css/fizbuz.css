@@ -1,0 +1,67 @@
+@font-face {
+	font-family: 'spin';
+	src: url('/fonts/spincycle_ot.otf');
+	src: local(☃ ), 
+			url('/fonts/spincycle_ot.woff') format('woff'),
+			url('/fonts/spincycle_ot.ttf') format('truetype'),
+			url('/fonts/spincycle_ot.svg#webfont') format('svg');
+	font-weight: normal;
+	font:style: normal;
+}
+.title {
+	margin-top: 10px;
+	font-size: 50px;
+	font-family: 'spin','Georgia', serf;
+	text-shadow: 10px 10px 10px  gray;
+	letter-spacing: 10px;
+	/*line-height: 40px;*/
+}
+.entry{
+	height: 10px;
+	font-size: 12pt;
+	transition:.5s;
+	-moz-transition: .5s;
+	-webkit-transition:.5s;
+	-o-transition:.5s;
+}
+.entry:hover{
+	height: 50px;
+	font-size: 16pt;
+}
+
+.justanumber{
+	color: rgba(0,0,0,0.3);
+}
+
+.fiz{
+	font-weight: bold;
+	background-color:rgba(56, 102,242, .5);
+}
+
+.buz{
+	font-weight: bold;
+	background-color:rgba(65, 242, 56, .5);
+}
+.fizbuz{
+	font-weight: bold;
+	background-color:rgba(56, 242, 208, .8);
+}
+.lemontable{
+	background-color: rgb(216,213,177);
+	background-image: url('/img/lemongrab.jpg');
+	background-repeat: no-repeat;
+}
+
+table{
+	box-shadow: 5px 5px 10px 0px gray; 
+	-mox-box-shadow: 5px 5px 10px 0px gray; 
+	-webkit-box-shadow: 5px 5px 10px 0px gray; 
+}
+.single{
+	margin-top: 20px;
+	padding: 10px;
+	background-color: rgba(0,0,0, .2);
+	border-radius: 10px;
+	-moz-border-radius: 10px;
+	box-shadow: 5px 5px 10px 0px gray; 
+}
